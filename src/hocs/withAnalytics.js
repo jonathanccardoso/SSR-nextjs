@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { loadGetInitialProps } from "next/dist/lib/utils";
+import { loadGetInitialProps } from "next";
 import ReactGA from "react-ga";
 
 export default () => (Composed) =>
@@ -9,10 +9,7 @@ export default () => (Composed) =>
     }
 
     componentDidMount() {
-      console.log("Page View");
-
-      // para saber toda a movimentação no site
-      ReactGA.initialize("ID_ANALITYCS");
+      ReactGA.initialize("ID_ANALYTICS");
       ReactGA.pageview(window.location.pathname);
     }
 

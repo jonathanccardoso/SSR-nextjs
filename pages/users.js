@@ -4,8 +4,6 @@ import axios from "axios";
 import Link from "next/link";
 import Head from "next/head";
 
-import withAnalyics from "../src/hocs/withAnalytics";
-
 const User = ({ users }) => (
   <div>
     <Head>
@@ -25,10 +23,10 @@ const User = ({ users }) => (
 // prop static used only to pages
 User.getInitialProps = async () => {
   const response = await axios.get(
-    "https://api.github.com/orgs/rockeseat/members"
+    "https://api.github.com/orgs/rocketseat/members"
   );
 
   return { users: response.data };
 };
 
-export default withAnalyics()(User);
+export default User;
