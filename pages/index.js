@@ -2,6 +2,9 @@ import React from "react";
 
 import Head from "next/head";
 
+// add component analytics
+import withAnalyics from "../src/hocs/withAnalytics";
+
 const Home = () => (
   <div>
     <Head>
@@ -11,4 +14,4 @@ const Home = () => (
   </div>
 );
 
-export default Home;
+export default withAnalyics()(Home);

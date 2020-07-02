@@ -15,3 +15,9 @@ Sempre a primeira pagina a ser renderiza é executada no servidor.
 ## Configurando Head
 
 A tag head do next sempre renderiza no html, na tag head do html.
+
+## Configurando HOCS
+
+utiliza-se para compartilhar o functionamento entre compoentes.
+
+HOC é uma função que retorna outra função que recebe como parametro um component
