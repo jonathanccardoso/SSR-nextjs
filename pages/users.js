@@ -11,7 +11,12 @@ const User = ({ users }) => (
     </Head>
     <ul>
       {users.map((user) => (
-        <li key={user.id}>{user.login}</li>
+        <li key={user.id}>
+          {user.login}
+          <Link href={`/users/${user.login}`}>
+            <a>Acessar perfil</a>
+          </Link>
+        </li>
       ))}
     </ul>
     <Link href="/">
@@ -23,7 +28,7 @@ const User = ({ users }) => (
 // prop static used only to pages
 User.getInitialProps = async () => {
   const response = await axios.get(
-    "https://api.github.com/orgs/rocketseat/members"
+    "https://api.github.com/orgs/Gametask-Co/members"
   );
 
   return { users: response.data };

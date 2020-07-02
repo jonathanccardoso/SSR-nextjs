@@ -14,7 +14,7 @@ const Home = () => (
     <img src="/static/logo-easy.png" width="300px" />
     <br />
     <Link href="/users">
-      <a>Home</a>
+      <a>Users</a>
     </Link>
   </div>
 );

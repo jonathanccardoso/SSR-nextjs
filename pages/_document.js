@@ -5,7 +5,7 @@ export default class Layout extends Document {
     return (
       <html>
         <Head>
-          <script>{`body { background: #069}`}</script>
+          <script>{`body { background-color: #069}`}</script>
         </Head>
         <body>
           <Main />
