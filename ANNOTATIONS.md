@@ -33,3 +33,7 @@ antes
 agora as paginas são feitas pelo server.js, configurado em
 
 next.config.js
+
+## Babel
+
+ele é ferramenta que transpila o codigo js para o navegador ou servidor
