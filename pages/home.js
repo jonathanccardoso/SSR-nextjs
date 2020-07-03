@@ -4,7 +4,9 @@ import styled from "styled-components";
 import Head from "next/head";
 import Link from "next/link";
 
-import withAnalytics from "../src/hocs/withAnalytics";
+import withAnalytics from "~/hocs/withAnalytics";
+
+export { withAnalytics };
 
 const Title = styled.h1`
   color: #069;
@@ -26,4 +28,8 @@ const Home = () => (
 );
 
 export default Home;
-// export default withAnalytics()(Home); // error: TypeError: Object(...) is not a function
+
+// export default withAnalytics()(Home);
+// export default withAnalytics(Home);
+
+// error: TypeError: Object(...) is not a function

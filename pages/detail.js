@@ -3,8 +3,6 @@ import axios from "axios";
 
 import Head from "next/head";
 
-import withAnalytics from "../src/hocs/withAnalytics";
-
 const Detail = ({ user }) => (
   <div>
     <Head>
@@ -24,4 +22,3 @@ Detail.getInitialProps = async ({ query }) => {
 };
 
 export default Detail;
-// export default withAnalytics()(Detail);
