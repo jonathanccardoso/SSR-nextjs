@@ -3,6 +3,8 @@ import axios from "axios";
 
 import Head from "next/head";
 
+import withAnalytics from "~/hocs/withAnalytics";
+
 const Detail = ({ user }) => (
   <div>
     <Head>
@@ -10,6 +12,9 @@ const Detail = ({ user }) => (
     </Head>
     <h1>{user.login}</h1>
     <img src={user.avatar_url} width="300px" />
+    <Link href="/users">
+      <a>Users</a>
+    </Link>
   </div>
 );
 
